@@ -1,0 +1,15 @@
+// Blog
+body.blog {
+    article.post {
+        @extend .card;
+        margin-bottom: ($spacer * 2);
+        img.card-img-top {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+        header.card-header {
+            background: #FFF;
+        }
+    }
+}

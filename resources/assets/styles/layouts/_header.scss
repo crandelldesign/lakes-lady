@@ -1,0 +1,111 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, #FFF);
+}
+
+.navbar-toggler:not(.collapsed) .burger-icon {
+  @include burger-to-cross;
+}
+
+.logo-container {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: ($spacer * 1.5) auto;
+    svg:first-child {
+      padding-right: ($spacer * 1.5);
+      margin-right: ($spacer * 1.5);
+      border-right: 1px solid map-get($lakes-colors, gainsboro);
+    }
+    svg.logo {
+      width: 100%;
+      max-width: 500px;
+      .logo-top {
+        fill: $primary;
+        @include transition(fill .3s ease-in-out);
+      }
+      .logo-bottom {
+        fill: map-get($lakes-colors, space-gray);
+      }
+      &:hover {
+        .logo-top {
+          fill: map-get($lakes-colors, space-gray);
+        }
+      }
+      &.logo-kw {
+        max-width: 330px;
+      }
+    }
+  }
+}
+
+.tagline {
+  text-align: center;
+  margin: ($spacer * 1.5) auto;
+  font-size: 1.5rem; // 24px
+}
+
+nav.navbar {
+  background-color: $primary;
+  @include box-shadow(2);
+  margin-bottom: ($spacer * 1.5);
+  .navbar-brand {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    svg.logo {
+      width: 100%;
+      .logo-top {
+        fill: #FFF;
+        @include transition(fill .3s ease-in-out);
+      }
+      .logo-bottom {
+        fill: #FFF;
+      }
+    }
+  }
+  .navbar-toggler {
+    border-color: map-get($lakes-colors, red-brown);
+  }
+  .navbar-nav {
+    
+  }
+  .navbar-nav {
+    margin-left: auto;
+    @include media-breakpoint-up(md) {
+      margin-right: auto;
+    }
+    .nav-link {
+      //color: $navbar-dark-color;
+      padding-left: ($nav-link-padding-x /2);
+      padding-right: ($nav-link-padding-x /2);
+      @include media-breakpoint-up(lg) {
+        padding-left: $nav-link-padding-x;
+        padding-right: $nav-link-padding-x;
+      }
+      @include hover-focus {
+        //color: $navbar-dark-hover-color;
+        background-color: #FFF;
+      }
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      //color: $navbar-dark-active-color;
+      background-color: #FFF;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Footer
+footer.footer {
+    margin: ($spacer * 1.5) 0;
+    padding-bottom: 1rem;
+    font-size: 0.75rem; // 12px
+    background: map-get($lakes-colors, carmine);
+    color: #FFF;
+    a {
+        color: #FFF;
+    }
+    .footer-nav .nav {
+        justify-content: center;
+        border-bottom: 1px solid #FFF;
+    }
+    .contact-info {
+        text-align: center;
+        section.widget {
+            margin: ($spacer / 2) 0;
+            h3 {
+                font-size: 1rem;
+                margin-bottom: ($spacer / 4);
+            }
+        }
+        .footer-phone {
+            font-size: 1rem;
+        }
+    }
+}

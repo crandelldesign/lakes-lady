@@ -1,0 +1,24 @@
+.style-container {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 30px;
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    > div {
+        &:nth-child(2) {
+            @include media-breakpoint-up(md) {
+                grid-column: 2;
+                grid-row: 1 / 3;
+            }
+        }
+    }
+}
+.dark-background {
+    background: url(http://blog.lakeslady.com/wp-content/themes/reality/assets/images/bg-middle-footer.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+    h1, label {
+        color: #FFF;
+    }
+}

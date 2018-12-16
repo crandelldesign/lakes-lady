@@ -1,0 +1,30 @@
+// Blog
+body.single {
+    .article-img-top {
+        object-fit: cover;
+        height: 500px;
+        width: 100%;
+    }
+    header {
+        .entry-title {
+            margin-top: 0.75rem;
+        }
+        .article-meta {
+            @extend .text-muted;
+            padding: 0.75rem 0;
+            margin-bottom: 0.75rem;
+            border-top: 1px solid map-get($lakes-colors, gainsboro);
+            border-bottom: 1px solid map-get($lakes-colors, gainsboro);
+        }
+    }
+    .article-meta {
+        font-size: 0.75rem; // 12px
+        svg {
+            fill: currentColor;
+        }
+        .post-date {
+            display: inline-block;
+            margin-right: 15px;
+        }
+    }
+}

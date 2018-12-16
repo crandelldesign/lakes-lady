@@ -1,0 +1,16 @@
+// Buttons
+.btn {
+  border: 1px solid #FFF;
+  @include box_shadow(1);
+}
+@each $key, $color in $lakes-colors {
+  //$i : index(($lakes-colors), ($key $color)) !global;
+  .btn-#{$key} {
+    background-color: $color;
+    color: color-yiq($color);
+    &:hover, &:focus {
+      background-color: darken($color, 7.5%);
+      border-color: darken($color, 7.5%);
+    }
+  }
+}

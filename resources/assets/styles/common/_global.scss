@@ -1,0 +1,27 @@
+// Links
+a {
+  @include transition(all .3s ease-in-out);
+  &.hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+// Theme Wrapper
+.wrap.container-fluid {
+  max-width: 1600px;
+}
+
+// Page Images
+div.content {
+  main.main {
+    img {
+      @extend .img-fluid;
+    }
+  }
+}
+
+// Navigation
+nav ul.pagination {
+  justify-content: center;
+}
