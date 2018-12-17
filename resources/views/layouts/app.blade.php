@@ -4,6 +4,11 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
+    @if (is_home())
+    
+    @yield('content')
+
+    @else
     <div class="wrap container-fluid" role="document">
       <div class="content">
         <main class="main">
@@ -16,6 +21,8 @@
         @endif
       </div>
     </div>
+    @endif
+    
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
