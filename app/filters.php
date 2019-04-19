@@ -82,3 +82,35 @@ add_filter('comments_template', function ($comments_template) {
     return $comments_template;
 }, 100);
 
+// Primary Category
+// Checks for a yoast primary category, if it exists move the category to the first position in the $categories array.
+add_filter( 'get_the_categories', function ($categories) {
+    // Check if yoast exists and get the primary category
+    if ($categories && class_exists('WPSEO_Primary_Term') ) {
+
+        // Show the post's 'Primary' category, if this Yoast feature is available, & one is set
+        $wpseo_primary_term = new \WPSEO_Primary_Term( 'category', get_the_id() );
+        $wpseo_primary_term = $wpseo_primary_term->get_primary_term();
+        $term = get_term( $wpseo_primary_term );
+    
+        // If no error is returned, get primary yoast term 
+        $primary_cat_term_id = (!is_wp_error($term)) ? $term->term_id : null;
+
+        // Loop all categories
+        if($primary_cat_term_id !== null) {
+            foreach ($categories as $i => $category) {
+
+                // Move the primary category to the top of the array
+                if($category->term_id === $primary_cat_term_id) {
+
+                    $out = array_splice($categories, $i, 1);
+                    array_splice($categories, 0, 0, $out);
+
+                    break;
+                }
+            }
+        }
+    } 
+    
+    return $categories;
+});

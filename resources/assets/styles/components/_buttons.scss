@@ -14,3 +14,20 @@
     }
   }
 }
+@each $key, $color in $lakes-colors {
+  .btn-outline-#{$color} {
+    border-color: $color;
+  }
+}
+.btn-outline-primary {
+  border-color: $primary;
+  &:hover, &:focus {
+    color: #FFF;
+  }
+}
+.btn-outline-secondary {
+  border-color: $secondary;
+}
+.btn-primary {
+  color: #FFF;
+}

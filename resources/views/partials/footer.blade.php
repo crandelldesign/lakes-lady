@@ -6,6 +6,7 @@
   @endif
   <div class="contact-info">
     <div class="container">
+      @include('partials/logo-kw')
       @php dynamic_sidebar('sidebar-footer') @endphp
     </div>
   </div>

@@ -2,17 +2,18 @@
 @import "~bootstrap/scss/functions";
 
 $lakes-colors: (
-  carmine: #EE3A39,
+  scooter: #358698,
+  tuna: #34344A,
+  aqua: #00D1FF,
+  monza: #C10230,
   space-gray: #4B4B4B,
-  red-brown: #AE2B2A,
-  jet: #34344A,
-  astral: #3771ac,
-  roman-silver: #88939a,
-  gainsboro: #DFDFDF
+  astral: #3771AC,
+  submarine: #88939a
 );
 
-$primary: map-get($lakes-colors, carmine);
-$danger: map-get($lakes-colors, carmine);
+$primary: map-get($lakes-colors, aqua);
+$secondary: map-get($lakes-colors, space-gray);
+//$danger: map-get($lakes-colors, red-brown);
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
@@ -21,14 +22,16 @@ $navbar-light-toggler-icon-bg: none;
 // Bootstrap Variables
 $body-color: map-get($lakes-colors, space-gray);
 $link-color: $primary;
-$link-hover-color: map-get($lakes-colors, red-brown);
-$hr-border-color: map-get($lakes-colors, jet);
+$link-hover-color: map-get($lakes-colors, tuna);
+$hr-border-color: map-get($lakes-colors, tuna);
 
 $navbar-dark-color: #FFF;
 $navbar-dark-hover-color: $primary;
 $navbar-dark-active-color: $primary;
 $navbar-dark-disabled-color: rgba(#FFF, .5);
 $navbar-padding-y: 0;
+$navbar-toggler-padding-y: .5rem;
+$navbar-toggler-padding-x: .75rem;
 $nav-link-padding-y: 1rem;
 $nav-link-padding-x: 1.5rem;
 
@@ -36,3 +39,7 @@ $font-family-base: 'Open Sans', sans-serif;
 $font-weight-base: 400;
 $headings-font-family: Oswald,sans-serif;
 $headings-font-weight: 400;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.75;
+$h2-font-size: $font-size-base * 2.25;

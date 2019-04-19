@@ -1,4 +1,8 @@
 // Typography
+h1, .h1 {
+  margin-bottom: 1rem;
+  color: map-get($lakes-colors, tuna);
+}
 h2 {
-  color: map-get($lakes-colors, roman-silver);
+  color: map-get($lakes-colors, scooter);
 }

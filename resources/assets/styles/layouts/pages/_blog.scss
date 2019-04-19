@@ -33,8 +33,15 @@ body.blog {
                 }
             }
         }
+        .article-content {
+            flex-grow: 1;
+        }
         header.card-header {
             background: #FFF;
+        }
+        .card-footer span {
+            margin-right: 15px;
+            display: inline-block;
         }
     }
     article.featured-post {
@@ -92,15 +99,23 @@ body.blog {
             .article-body {
                 padding-top: 1.25rem;
                 padding-bottom: 1.25rem;
+                .btn-container {
+                    padding-top: 1.25rem;
+                    padding-bottom: 1.25rem;
+                }
                 .btn {
                     background-color: transparent;
                     &:hover {
                         background-color: #FFF;
                         border-color: #FFF;
-                        color: map-get($lakes-colors, jet);
+                        color: map-get($lakes-colors, tuna);
                     }
                 }
             }
+        }
+        .article-footer span {
+            margin-right: 15px;
+            display: inline-block;
         }
         &:hover {
             img {
@@ -109,7 +124,7 @@ body.blog {
             .article-content .article-body .btn {
                 background-color: #FFF;
                 border-color: #FFF;
-                color: map-get($lakes-colors, jet);
+                color: map-get($lakes-colors, tuna);
             }
         }
     }

@@ -22,13 +22,14 @@
     justify-content: center;
     margin: ($spacer * 1.5) auto;
     svg:first-child {
-      padding-right: ($spacer * 1.5);
+      /*padding-right: ($spacer * 1.5);
       margin-right: ($spacer * 1.5);
-      border-right: 1px solid map-get($lakes-colors, gainsboro);
+      border-right: 1px solid map-get($lakes-colors, gainsboro);*/
     }
     svg.logo {
       width: 100%;
       max-width: 500px;
+      fill: #4B4B4B;
       .logo-top {
         fill: $primary;
         @include transition(fill .3s ease-in-out);
@@ -36,14 +37,26 @@
       .logo-bottom {
         fill: map-get($lakes-colors, space-gray);
       }
+      .logo-rooftop {
+        fill: map-get($lakes-colors, scooter);
+      }
+      .logo-text-blog {
+        fill: map-get($lakes-colors, monza);
+      }
       &:hover {
-        .logo-top {
+        /*.logo-top {
+          fill: map-get($lakes-colors, space-gray);
+        }*/
+      }
+      /*&.logo-kw {
+        max-width: 330px;
+        .kw-initials {
+          fill: map-get($lakes-colors, roman-silver);
+        }
+        .kw-letters {
           fill: map-get($lakes-colors, space-gray);
         }
-      }
-      &.logo-kw {
-        max-width: 330px;
-      }
+      }*/
     }
   }
 }
@@ -55,7 +68,7 @@
 }
 
 nav.navbar {
-  background-color: $primary;
+  background-color: map-get($lakes-colors, astral);
   @include box-shadow(2);
   margin-bottom: ($spacer * 1.5);
   .navbar-brand {
@@ -64,17 +77,11 @@ nav.navbar {
     }
     svg.logo {
       width: 100%;
-      .logo-top {
-        fill: #FFF;
-        @include transition(fill .3s ease-in-out);
-      }
-      .logo-bottom {
-        fill: #FFF;
-      }
+      fill: #FFF;
     }
   }
   .navbar-toggler {
-    border-color: map-get($lakes-colors, red-brown);
+    border-color: #FFF;
   }
   .navbar-nav {
     

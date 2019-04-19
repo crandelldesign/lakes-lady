@@ -13,32 +13,32 @@
 
                 <div class="color-swatches">
                     <div class="color-swatch swatch1">
-                        Carmine<br>
-                        #EE3A39
+                        Scooter<br>
+                        #358698
                     </div>
                     <div class="color-swatch swatch2">
-                        Space Gray<br>
-                        #4B4B4B
-                    </div>
-                    <div class="color-swatch swatch3">
-                        Red Brown<br>
-                        #AE2B2A
-                    </div>
-                    <div class="color-swatch swatch4">
-                        Jet<br>
+                        Tuna<br>
                         #34344A
                     </div>
+                    <div class="color-swatch swatch3">
+                        Aqua<br>
+                        #00D1FF
+                    </div>
+                    <div class="color-swatch swatch4">
+                        Monza<br>
+                        #C10230
+                    </div>
                     <div class="color-swatch swatch5">
+                        Soace Gray<br>
+                        #4B4B4B
+                    </div>
+                    <div class="color-swatch swatch6">
                         Astral<br>
                         #3771AC
                     </div>
-                    <div class="color-swatch swatch6">
-                        Roman Silver<br>
-                        #88939A
-                    </div>
                     <div class="color-swatch swatch7">
-                        Gainsboro<br>
-                        #DFDFDF
+                        Submarine<br>
+                        #3771AC
                     </div>
                 </div>
             </div>
@@ -47,12 +47,12 @@
                 <h1>Typography</h1>
 
                 <h1>Heading 1</h1>
-                <p class="details">Font: Oswald / Space Gray #4B4B4B</p>
+                <p class="details">Font: Oswald / Tuna #34344A</p>
 
                 <hr>
 
                 <h2>Heading 2</h2>
-                <p class="details">Font: Oswald / Roman Silver #88939A</p>
+                <p class="details">Font: Oswald / Space Gray #4B4B4B</p>
 
                 <hr>
 
@@ -69,30 +69,31 @@
 
                 <p class="details">Font: Open Sans / Space Gray #4B4B4B</p>
             </div>
-            <div>
+            <div class="btn-area">
                 <h1>Buttons</h1>
 
                 <p>
-                    <button class="btn btn-lg btn-primary">Primary</button>
-
-                    <button class="btn btn-space-gray">Space Gray</button>
-
-                    <button class="btn btn-red-brown">Red Brown</button>
-
-                    <button class="btn btn-jet">Jet</button>
+                    <button class="btn btn-primary">Primary</button>&nbsp;
+                    <button class="btn btn-secondary">Secondary</button>&nbsp;
+                    <button class="btn btn-outline-primary">Outline Primary</button>&nbsp; 
+                    <button class="btn btn-outline-secondary">Outline Secondary</button>&nbsp; 
                 </p>
 
                 <div class="dark-background">
                     <p>
-                        <button class="btn btn-lg btn-primary">Primary</button>
-
-                        <button class="btn btn-space-gray">Space Gray</button>
-
-                        <button class="btn btn-red-brown">Red Brown</button>
-
-                        <button class="btn btn-jet">Jet</button>
+                        <button class="btn btn-primary">Primary</button>&nbsp;
+                        <button class="btn btn-secondary">Secondary</button>&nbsp;
+                        <button class="btn btn-outline-primary">Outline Primary</button>&nbsp; 
+                        <button class="btn btn-outline-secondary">Outline Secondary</button>&nbsp; 
                     </p>
                 </div>
+
+                <h2>Button Sizes</h2>
+                <p>
+                    <button class="btn btn-lg btn-primary">Large</button>&nbsp;
+                    <button class="btn btn-primary">Normal</button>&nbsp;
+                    <button class="btn btn-sm btn-primary">Small</button>&nbsp; 
+                </p>
 
             </div>
             <div>

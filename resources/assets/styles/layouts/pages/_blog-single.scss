@@ -4,6 +4,7 @@ body.single {
         object-fit: cover;
         height: 500px;
         width: 100%;
+        margin: 1rem 0;
     }
     header {
         .entry-title {
@@ -15,6 +16,10 @@ body.single {
             margin-bottom: 0.75rem;
             border-top: 1px solid map-get($lakes-colors, gainsboro);
             border-bottom: 1px solid map-get($lakes-colors, gainsboro);
+            span {
+                margin-right: 15px;
+                display: inline-block;
+            }
         }
     }
     .article-meta {
@@ -26,5 +31,8 @@ body.single {
             display: inline-block;
             margin-right: 15px;
         }
+    }
+    .tag-container {
+        font-size: 0.75rem; // 12px
     }
 }

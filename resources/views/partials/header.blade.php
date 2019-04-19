@@ -9,9 +9,8 @@
   </div>-->
   <a class="logo-container" href="{{ home_url('/') }}">
     @include('partials/logo')
-    @include('partials/logo-kw')
   </a>
-  <div class="tagline">{{ get_bloginfo('description', 'display') }}</div>
+  <!--<div class="tagline">{{ get_bloginfo('description', 'display') }}</div>-->
   <nav class="navbar navbar-expand-md navbar-dark">
 
     <div class="container">
